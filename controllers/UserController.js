@@ -65,7 +65,7 @@ export const login = async(req, res , next)=>{
     }
 
     if(!exsistingUser){
-        return res.status(404).json({message : `${email} user does not exist `})
+        return res.status(404).json({message : `${email} user does not exist  `})
     }
 
 ////////// password checking 
