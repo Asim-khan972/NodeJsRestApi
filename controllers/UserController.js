@@ -39,7 +39,7 @@ export const SignUp = async (req, res, next)=>{
 const hashedPassword = bcrypt.hashSync(password);
 
     const user = new User({
-        name , email, password:hashedPassword
+        name , email, password:hashedPassword , blogs:[]
     });
 
     try{

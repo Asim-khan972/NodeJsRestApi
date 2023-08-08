@@ -1,7 +1,8 @@
 import express from 'express';
+const router = express.Router();
+
 import { getAllUsers, login, SignUp } from '../controllers/UserController.js';
 
-const router = express.Router();
                    
  
 ////  path , controller      that  app.js <=  routes =< controller <= model 

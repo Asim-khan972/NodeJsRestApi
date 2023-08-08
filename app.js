@@ -1,6 +1,7 @@
 import express from 'express';
 import  mongoose  from "mongoose";
 import router from './routes/UserRoutes.js';
+import Blogrouter from './routes/Blogroutes.js';
 
 var app = express()  //// we can say that express is class and app is object of it 
 const port = 3000;
@@ -11,6 +12,7 @@ const port = 3000;
 app.use(express.json());
 
 app.use('/api/users', router)
+app.use('/api/blog', Blogrouter);
 
 
 
